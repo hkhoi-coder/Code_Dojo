@@ -1,0 +1,136 @@
+data = [62, 58, 576, 428, 7568, 74, 6, 857, 5, 8263, 45, 46, 24, 378, 5824, 368]
+__partition(0, 15)
+pivot = 62
+Before moving, i = 1, j = 15
+After moving, i = 2, j = 12
+i < j, swap(i, j)
+Before moving, i = 3, j = 11
+After moving, i = 3, j = 11
+i < j, swap(i, j)
+Before moving, i = 4, j = 10
+After moving, i = 4, j = 10
+i < j, swap(i, j)
+Before moving, i = 5, j = 9
+After moving, i = 5, j = 8
+i < j, swap(i, j)
+Before moving, i = 6, j = 7
+After moving, i = 7, j = 6
+i >= j, swap(pivot, j)
+
+data = [6, 58, 24, 46, 45, 5, 62, 857, 74, 8263, 7568, 428, 576, 378, 5824, 368]
+__partition(0, 5)
+pivot = 6
+Before moving, i = 1, j = 5
+After moving, i = 1, j = 5
+i < j, swap(i, j)
+Before moving, i = 2, j = 4
+After moving, i = 2, j = 1
+i >= j, swap(pivot, j)
+
+data = [5, 6, 24, 46, 45, 58, 62, 857, 74, 8263, 7568, 428, 576, 378, 5824, 368]
+__partition(0, 0)
+0 >= 0, quitting...
+
+data = [5, 6, 24, 46, 45, 58, 62, 857, 74, 8263, 7568, 428, 576, 378, 5824, 368]
+__partition(2, 5)
+pivot = 24
+Before moving, i = 3, j = 5
+After moving, i = 3, j = 2
+i >= j, swap(pivot, j)
+
+data = [5, 6, 24, 46, 45, 58, 62, 857, 74, 8263, 7568, 428, 576, 378, 5824, 368]
+__partition(2, 1)
+2 >= 1, quitting...
+
+data = [5, 6, 24, 46, 45, 58, 62, 857, 74, 8263, 7568, 428, 576, 378, 5824, 368]
+__partition(3, 5)
+pivot = 46
+Before moving, i = 4, j = 5
+After moving, i = 5, j = 4
+i >= j, swap(pivot, j)
+
+data = [5, 6, 24, 45, 46, 58, 62, 857, 74, 8263, 7568, 428, 576, 378, 5824, 368]
+__partition(3, 3)
+3 >= 3, quitting...
+
+data = [5, 6, 24, 45, 46, 58, 62, 857, 74, 8263, 7568, 428, 576, 378, 5824, 368]
+__partition(5, 5)
+5 >= 5, quitting...
+
+data = [5, 6, 24, 45, 46, 58, 62, 857, 74, 8263, 7568, 428, 576, 378, 5824, 368]
+__partition(7, 15)
+pivot = 857
+Before moving, i = 8, j = 15
+After moving, i = 9, j = 15
+i < j, swap(i, j)
+Before moving, i = 10, j = 14
+After moving, i = 10, j = 13
+i < j, swap(i, j)
+Before moving, i = 11, j = 12
+After moving, i = 13, j = 12
+i >= j, swap(pivot, j)
+
+data = [5, 6, 24, 45, 46, 58, 62, 576, 74, 368, 378, 428, 857, 7568, 5824, 8263]
+__partition(7, 11)
+pivot = 576
+Before moving, i = 8, j = 11
+After moving, i = 11, j = 11
+i >= j, swap(pivot, j)
+
+data = [5, 6, 24, 45, 46, 58, 62, 428, 74, 368, 378, 576, 857, 7568, 5824, 8263]
+__partition(7, 10)
+pivot = 428
+Before moving, i = 8, j = 10
+After moving, i = 10, j = 10
+i >= j, swap(pivot, j)
+
+data = [5, 6, 24, 45, 46, 58, 62, 378, 74, 368, 428, 576, 857, 7568, 5824, 8263]
+__partition(7, 9)
+pivot = 378
+Before moving, i = 8, j = 9
+After moving, i = 9, j = 9
+i >= j, swap(pivot, j)
+
+data = [5, 6, 24, 45, 46, 58, 62, 368, 74, 378, 428, 576, 857, 7568, 5824, 8263]
+__partition(7, 8)
+pivot = 368
+Before moving, i = 8, j = 8
+After moving, i = 8, j = 8
+i >= j, swap(pivot, j)
+
+data = [5, 6, 24, 45, 46, 58, 62, 74, 368, 378, 428, 576, 857, 7568, 5824, 8263]
+__partition(7, 7)
+7 >= 7, quitting...
+
+data = [5, 6, 24, 45, 46, 58, 62, 74, 368, 378, 428, 576, 857, 7568, 5824, 8263]
+__partition(9, 8)
+9 >= 8, quitting...
+
+data = [5, 6, 24, 45, 46, 58, 62, 74, 368, 378, 428, 576, 857, 7568, 5824, 8263]
+__partition(10, 9)
+10 >= 9, quitting...
+
+data = [5, 6, 24, 45, 46, 58, 62, 74, 368, 378, 428, 576, 857, 7568, 5824, 8263]
+__partition(11, 10)
+11 >= 10, quitting...
+
+data = [5, 6, 24, 45, 46, 58, 62, 74, 368, 378, 428, 576, 857, 7568, 5824, 8263]
+__partition(12, 11)
+12 >= 11, quitting...
+
+data = [5, 6, 24, 45, 46, 58, 62, 74, 368, 378, 428, 576, 857, 7568, 5824, 8263]
+__partition(13, 15)
+pivot = 7568
+Before moving, i = 14, j = 15
+After moving, i = 15, j = 14
+i >= j, swap(pivot, j)
+
+data = [5, 6, 24, 45, 46, 58, 62, 74, 368, 378, 428, 576, 857, 5824, 7568, 8263]
+__partition(13, 13)
+13 >= 13, quitting...
+
+data = [5, 6, 24, 45, 46, 58, 62, 74, 368, 378, 428, 576, 857, 5824, 7568, 8263]
+__partition(15, 15)
+15 >= 15, quitting...
+
+Final result = [5, 6, 24, 45, 46, 58, 62, 74, 368, 378, 428, 576, 857, 5824, 7568, 8263]
