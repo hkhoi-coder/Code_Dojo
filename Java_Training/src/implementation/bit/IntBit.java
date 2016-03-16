@@ -34,4 +34,9 @@ public class IntBit {
     public int createFullBit(int num) {
         return (1 << num) - 1;
     }
+    
+    public int trimLeft(int num, int numKeep) {
+        int mask = createFullBit(numKeep);
+        return num & mask;
+    }
 }
