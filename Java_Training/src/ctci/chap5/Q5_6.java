@@ -5,17 +5,18 @@ package ctci.chap5;
  * @author hkhoi
  */
 public class Q5_6 {
-    public int bitSwap(int num) {        
+    public int bitSwap(int num) {
         int result = 0;
-        int count = 0;
-        
+        int pos = 0;
         while (num != 0) {
-            int mask = num % 2;
+            int lastBit0 = num % 2;
             num >>= 1;
-            mask = mask * 2 + num % 2;
+            int lastBit1 = num % 2;
             num >>= 1;
-            mask <<= count;
-            count += 2;
+            
+            int mask = lastBit0 * 2 + lastBit1;
+            mask <<= pos;
+            pos += 2;
             result |= mask;
         }
         

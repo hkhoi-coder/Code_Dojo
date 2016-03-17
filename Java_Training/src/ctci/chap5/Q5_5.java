@@ -5,21 +5,16 @@ package ctci.chap5;
  * @author hkhoi
  */
 public class Q5_5 {
-    public int bitConversion(int data, int target) {
+    public int bitConversion(int a, int b) {
+        int max = Math.max(a, b);
         int count = 0;
         
-        int max = Math.max(data, target);
-        
-        while (max != 0) {
-            boolean lastBitData = data % 2 == 0;
-            boolean lastBitTarget = target % 2 == 0;
-            
-            if (lastBitData != lastBitTarget) {
+        while (max > 0) {
+            if (a % 2 != b % 2) {
                 ++count;
             }
-            
-            target >>= 1;
-            data >>= 1;
+            a >>= 1;
+            b >>= 1;
             max >>= 1;
         }
         
