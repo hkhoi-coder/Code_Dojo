@@ -174,5 +174,11 @@ public class LinkedList implements Iterable<Integer> {
         public String toString() {
             return "This = " + value;
         }
+
+        @Override
+        protected void finalize() throws Throwable {
+            super.finalize(); //To change body of generated methods, choose Tools | Templates.
+            System.out.println("Final");
+        }
     }
 }

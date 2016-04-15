@@ -1,6 +1,7 @@
 package driver;
 
-import ctci.chap5.Q5_2;
+import review.implementation.hash.LinearHashSet;
+
 
 /**
  *
@@ -9,7 +10,11 @@ import ctci.chap5.Q5_2;
 public class Main {
 
     public static void main(String[] args) {
-        Q5_2 solve = new Q5_2();
-        System.out.println(solve.convertRealToBin(0.125));
+        LinearHashSet linear = new LinearHashSet(10);
+        for (int i = 0 ; i < 15; ++i) {
+            System.out.println(i + " " + linear.put(i));
+        }
+        
+        System.out.println(linear);
     }
 }

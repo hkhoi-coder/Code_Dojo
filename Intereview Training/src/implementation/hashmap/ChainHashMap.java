@@ -83,9 +83,4 @@ public class ChainHashMap {
             return "Entry{" + "key=" + key + ", value=" + value + '}';
         }
     }
-
-    @Override
-    public String toString() {
-        return "ChainHashMap{" + "data=" + Arrays.toString(data) + '}';
-    }
 }
