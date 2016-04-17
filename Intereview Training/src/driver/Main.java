@@ -1,7 +1,6 @@
 package driver;
 
-import review.implementation.hash.LinearHashSet;
-
+import ctci.chap9.Q9_2;
 
 /**
  *
@@ -10,11 +9,7 @@ import review.implementation.hash.LinearHashSet;
 public class Main {
 
     public static void main(String[] args) {
-        LinearHashSet linear = new LinearHashSet(10);
-        for (int i = 0 ; i < 15; ++i) {
-            System.out.println(i + " " + linear.put(i));
-        }
-        
-        System.out.println(linear);
+        Q9_2 solve = new Q9_2();
+        System.out.println(solve.waysToMove(10, 10));
     }
 }
