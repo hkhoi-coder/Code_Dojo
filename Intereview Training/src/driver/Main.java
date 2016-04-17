@@ -1,6 +1,7 @@
 package driver;
 
-import ctci.chap9.Q9_2;
+import ctci.chap9.Q9_6;
+import java.util.List;
 
 /**
  *
@@ -9,7 +10,13 @@ import ctci.chap9.Q9_2;
 public class Main {
 
     public static void main(String[] args) {
-        Q9_2 solve = new Q9_2();
-        System.out.println(solve.waysToMove(10, 10));
+        Q9_6 solve = new Q9_6();
+        List<String> result = solve.paraPerm(4);
+        
+        for (String it : result) {
+            System.out.println(it);
+        }
+        
+        System.out.println(result.size());
     }
 }
