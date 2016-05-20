@@ -8,6 +8,5 @@ public class RegexDemo implements Runnable {
 
     @Override
     public void run() {
-        
     }
 }

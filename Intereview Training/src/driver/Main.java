@@ -1,7 +1,7 @@
 package driver;
 
-import ctci.chap9.Q9_6;
-import java.util.List;
+import design_pattern.factory.Zombie;
+import design_pattern.factory.ZombieFactory;
 
 /**
  *
@@ -10,13 +10,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Q9_6 solve = new Q9_6();
-        List<String> result = solve.paraPerm(4);
+        ZombieFactory zombieFactory = new ZombieFactory();
+        Zombie zombie = zombieFactory.makeZombie(ZombieFactory.ZombieType.JOCKEY);
         
-        for (String it : result) {
-            System.out.println(it);
-        }
-        
-        System.out.println(result.size());
+        zombie.roar();
     }
 }
